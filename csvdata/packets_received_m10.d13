@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/usr/sbin/lizardfs-cgiserver", line 306, in run_cgi
+    execfile(self.file_name, {})
+  File "/usr/share/mfscgi/chart.cgi", line 95, in <module>
+    f = open('err.gif')
+IOError: [Errno 2] No such file or directory: 'err.gif'
