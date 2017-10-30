@@ -1162,7 +1162,8 @@ if "CS" in sectionset:
 			SHrev = False
 
 		try:
-#			out.append("""<script src="http://%s/htvcenter/base/mfs/mfschunkeditor.js" type="text/javascript"></script>""" % (urlescape(masterhost)))
+			out.append("""<script src="http://%s/htvcenter/base/mfs/jquery-quickedit.js" type="text/javascript"></script>""" % (urlescape(masterhost)))
+			out.append("""<script src="http://%s/htvcenter/base/mfs/mfschunkeditor.js" type="text/javascript"></script>""" % (urlescape(masterhost)))
 			out.append("""<table class="FRA table table-bordered table-hover toggle-circle tablet breakpoint footable-loaded footable" cellspacing="0" summary="Metadata Servers">""")
 			out.append("""	<tr class="info"><th colspan="8">Metadata Servers</th></tr>""")
 			out.append("""	<tr class="info">""")
@@ -2961,7 +2962,6 @@ if "HELP" in sectionset:
 
 
 print """</div> <!-- end of container -->"""
-print """<script src="js/jquery-quickedit.js"></script>"""
 print """<script src="js/mfs.js"></script>"""
 print """</body>"""
 print """</html>"""
